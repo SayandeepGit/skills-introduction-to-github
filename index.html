@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauna Species Tracker - Endangered Wildlife Finder</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦁 Fauna Species Tracker</h1>
+            <p class="subtitle">Discover endangered wildlife species around the world</p>
+        </header>
+
+        <div class="controls">
+            <button id="useLocationBtn" class="btn btn-primary">
+                📍 Use My Location
+            </button>
+            <button id="clearSelectionBtn" class="btn btn-secondary">
+                🔄 Clear Selection
+            </button>
+            <div class="info-text">
+                💡 Click on the map to pin a location and discover wildlife species in that area
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="map-container">
+                <div id="map"></div>
+                <div id="locationInfo" class="location-info hidden">
+                    <h3>Selected Location</h3>
+                    <p id="locationCoords"></p>
+                </div>
+            </div>
+
+            <div class="species-container">
+                <h2>Species Found</h2>
+                <div id="speciesList" class="species-list">
+                    <p class="placeholder">Select a location on the map to view species data</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="speciesModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Species Data -->
+    <script src="species-data.js"></script>
+    
+    <!-- Main App JS -->
+    <script src="app.js"></script>
+</body>
+</html>

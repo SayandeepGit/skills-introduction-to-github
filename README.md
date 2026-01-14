@@ -13,6 +13,23 @@ _Get started using GitHub in less than an hour._
 
 </header>
 
+---
+
+## 🦁 Fauna Species Tracker Application
+
+This repository now includes a **Fauna Species Tracker** web application that helps users discover endangered wildlife species around the world.
+
+### Quick Start
+Open `index.html` in your browser or run:
+```bash
+npm install
+npm start
+```
+
+📖 [Read the full documentation](FAUNA_TRACKER_README.md)
+
+---
+
 <!--
   <<< Author notes: Course start >>>
   Include start button, a note about Actions minutes,
