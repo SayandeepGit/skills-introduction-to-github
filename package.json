@@ -1,0 +1,22 @@
+{
+  "name": "fauna-species-tracker",
+  "version": "1.0.0",
+  "description": "A web application to track endangered fauna species by location",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "endangered-species",
+    "fauna",
+    "conservation",
+    "wildlife",
+    "map"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
